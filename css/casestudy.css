@@ -1,0 +1,325 @@
+/* Variables */
+:root {
+  --main-font: "Montserrat", sans-serif;
+  --secondary-font: "Varela Round", sans-serif;
+  --main-color: rgb(82, 43, 133);
+  --secondary-color: rgba(58, 1, 132, 0.44);
+}
+
+/* Utility Classes */
+.divider {
+  display: block;
+  width: 30%;
+  border-bottom: 3px solid var(--secondary-color);
+}
+
+.btn {
+  text-decoration: none;
+  text-align: center;
+  background-color: transparent;
+  padding: 0.7rem;
+  font-family: var(--secondary-font);
+  font-size: 1rem;
+  border: 1px solid var(--main-color);
+  border-radius: 100px;
+  color: var(--main-color);
+  width: 200px;
+  margin: 0 auto;
+  cursor: pointer;
+  -webkit-transition: background-color 0.3s linear;
+  -o-transition: background-color 0.3s linear;
+  transition: background-color 0.3s linear;
+}
+
+.btn:hover {
+  background-color: var(--main-color);
+  border: 1px solid transparent;
+  color: #fff;
+}
+
+.btn a {
+  color: var(--main-color);
+}
+
+.btn:hover a {
+  color: #fff;
+}
+
+/* Children's Book */
+#hero_image.childrens_book {
+  padding-top: 5.7rem;
+  background-image: url(../imgs/work/childrens_book.JPG);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  min-height: 200px;
+  position: relative;
+}
+
+/* Nintendo Switch */
+#hero_image.switch {
+  padding-top: 5.7rem;
+  background-image: url(../imgs/work/nintendo_switch.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  min-height: 200px;
+  position: relative;
+}
+
+/* Baseball Poster */
+#hero_image.poster {
+  padding-top: 5.7rem;
+  background-image: url(../imgs/work/poster_overlay.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  position: relative;
+}
+
+/* Nature's Path */
+#hero_image.promo {
+  padding-top: 5.7rem;
+  background-image: url(../imgs/work/motion_graphics.JPG);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  position: relative;
+}
+
+/* Mascot Flip Cards */
+#hero_image.mascot_cards {
+  padding-top: 5.7rem;
+  background-image: url(../imgs/work/mascot_overlay.JPG);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  position: relative;
+}
+
+/* Music Video */
+#hero_image.ballgame {
+  padding-top: 5.7rem;
+  background-image: url(../imgs/work/music_process01.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  position: relative;
+}
+
+/* Brand Characters */
+#hero_image.brandCharacter {
+  padding-top: 5.7rem;
+  background-image: url(../imgs/work/brand_character.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  position: relative;
+}
+/* Ecard */
+#hero_image.ecard {
+  padding-top: 5.7rem;
+  background-image: url(../imgs/work/ecard_overlay.JPG);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  position: relative;
+}
+
+/* Recyclone */
+#hero_image.recyclone {
+  padding-top: 5.7rem;
+  background-image: url(../imgs/work/recyclone_overlay.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 30% 20%;
+  width: 100%;
+  position: relative;
+}
+
+/* Banner */
+#hero_image.banner {
+  padding-top: 5.7rem;
+  background-image: url(../imgs/work/banner_overlay.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 30% 20%;
+  width: 100%;
+  position: relative;
+}
+
+/* Overlays */
+#hero_image.childrens_book::after,
+#hero_image.switch::after,
+#hero_image.poster::after,
+#hero_image.promo::after,
+#hero_image.mascot_cards::after,
+#hero_image.ballgame::after,
+#hero_image.brandCharacter::after,
+#hero_image.ecard::after,
+#hero_image.recyclone::after,
+#hero_image.banner::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.77);
+  width: 100%;
+  height: 100%;
+}
+
+#hero_image h1 {
+  font-family: var(--main-font);
+  font-weight: 800;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+}
+
+#hero_image p {
+  font-family: var(--secondary-font);
+  color: #fff;
+  position: relative;
+  z-index: 1;
+}
+
+/* Case Study */
+#case_study .header {
+  font-family: var(--main-font);
+  color: var(--main-color);
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+#case_study .header p {
+  width: 75%;
+  position: relative;
+  text-transform: uppercase;
+}
+
+#case_study .header p::before {
+  display: block;
+  content: "";
+  width: 100%;
+  position: absolute;
+  background: var(--secondary-color);
+  height: 3px;
+  top: 50%;
+}
+
+#case_study .header p > span {
+  padding: 0 3rem;
+  display: inline-block;
+  max-width: 85%;
+  position: relative;
+  background-color: #fff;
+}
+
+#case_study img {
+  max-width: 100%;
+}
+
+#case_study .gallery img {
+  width: 100%;
+}
+
+#case_study h2 {
+  font-family: var(--main-font);
+}
+
+#case_study h5 {
+  font-size: 1rem;
+  letter-spacing: 1.7px;
+}
+
+#case_study .purple {
+  color: var(--secondary-color);
+}
+
+#case_study .description {
+  font-family: var(--secondary-font);
+  line-height: 1.7;
+}
+
+#case_study ul {
+  list-style-type: none;
+}
+
+#process h3 span {
+  font-size: 1.3rem;
+  letter-spacing: 1.7px;
+}
+
+#process .description {
+  padding-top: 0.7rem;
+}
+
+/* Pagination */
+.pagination {
+  margin: 5rem;
+}
+
+.pagination li a {
+  font-size: 1rem;
+  padding: 1rem;
+  -webkit-transition: background-color 0.5s ease;
+  -o-transition: background-color 0.5s ease;
+  transition: background-color 0.5s ease;
+  color: #333;
+}
+
+.pagination li a:hover {
+  background-color: var(--main-color);
+  color: #fff;
+}
+
+.gallery-item .title {
+  margin-top: 0.5rem;
+  text-decoration: none;
+  color: var(--main-color);
+}
+
+.gallery-item:hover {
+  text-decoration: none;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  #case_study .header {
+    font-size: 1.3rem;
+  }
+
+  #case_study .header p > span {
+    padding: 0 1rem;
+  }
+
+  #case_study .gallery img {
+    min-height: auto;
+  }
+
+  #case_study h2 {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+  }
+
+  #case_study h5 {
+    font-size: 0.7rem;
+  }
+
+  #case_study .description {
+    font-size: 0.85rem;
+  }
+
+  #process h3 span {
+    font-size: 1.3rem;
+    letter-spacing: 1.7px;
+  }
+}

@@ -1,0 +1,178 @@
+/* Variables */
+:root {
+  --main-font: "Montserrat", sans-serif;
+  --secondary-font: "Varela Round", sans-serif;
+  --main-color: rgb(82, 43, 133);
+  --secondary-color: rgba(58, 1, 132, 0.44);
+}
+
+/* Utility Classes */
+
+.divider {
+  display: block;
+  width: 30%;
+  border-bottom: 3px solid var(--secondary-color);
+}
+
+/* About Header */
+#about {
+  padding-top: 3.7rem;
+  background-image: url(../imgs/about_image.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-attachment: fixed;
+  width: 100%;
+  min-height: 200px;
+  position: relative;
+}
+
+#about::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+}
+
+#about h1 {
+  font-family: var(--main-font);
+  font-weight: 800;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+}
+
+#about p {
+  font-family: var(--secondary-font);
+  color: #fff;
+  position: relative;
+  z-index: 1;
+}
+
+/* Introduction */
+main {
+  line-height: 1.7;
+  letter-spacing: 0.8px;
+}
+
+main h3 {
+  font-family: var(--main-font);
+  font-size: 2rem;
+  font-weight: 800;
+  color: #333;
+}
+
+main .jumbotron {
+  background-color: #fff;
+}
+
+main img {
+  max-width: auto;
+  height: 500px;
+  border: 3px solid rgba(143, 83, 221, 1);
+}
+
+/* Painting */
+#painting img {
+  max-width: 100%;
+}
+
+#painting .gallery {
+  max-width: 760px;
+}
+
+#painting .imgs {
+  display: -ms-grid;
+  display: grid;
+  grid-template-areas:
+    "vegegirl eagle portrait"
+    "vegegirl eagle portrait"
+    "vegegirl apple portrait"
+    "vegegirl apple portrait";
+  cursor: pointer;
+}
+
+#painting .vegegirl {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 4;
+  -ms-grid-column: 1;
+  grid-area: vegegirl;
+}
+
+#painting .apple {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 2;
+  grid-area: apple;
+}
+
+#painting .eagle {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 2;
+  grid-area: eagle;
+}
+
+#painting .portrait {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 4;
+  -ms-grid-column: 3;
+  grid-area: portrait;
+}
+
+/* Fade in animation */
+@-webkit-keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  -webkit-animation: fadeIn 0.5s ease-in 1 forwards;
+  animation: fadeIn 0.5s ease-in 1 forwards;
+}
+
+/* Hobby */
+#hobby img {
+  max-width: 500px;
+}
+
+/* Photo Slides */
+.rslides {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.rslides li {
+  position: absolute;
+  display: none;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+
+.rslides li:first-child {
+  position: relative;
+  display: block;
+  float: left;
+}
+
+/* Media Queries */
+@media (max-width: 500px) {
+  #about {
+    padding-top: 7rem;
+  }
+}

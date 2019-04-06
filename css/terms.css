@@ -1,0 +1,70 @@
+/* Variables */
+:root {
+  --main-font: "Montserrat", sans-serif;
+  --secondary-font: "Varela Round", sans-serif;
+  --main-color: rgb(82, 43, 133);
+  --secondary-color: rgba(58, 1, 132, 1);
+}
+
+/* Hero Image */
+.hero {
+  position: relative;
+  background-image: url(../imgs/terms.jpeg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  overflow: hidden;
+  height: 30vh;
+  color: #fff;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  font-family: var(--main-font);
+  margin-top: 170px;
+  z-index: 1;
+  text-transform: capitalize;
+}
+
+/* Terms of Use */
+.terms h1 {
+  color: var(--main-color);
+  text-transform: uppercase;
+  font-family: var(--main-font);
+}
+
+.terms p {
+  line-height: 2;
+  font-size: 1.3rem;
+}
+
+.terms article {
+  color: var(--secondary-color);
+}
+
+/* Media Queries */
+@media (max-width: 500px) {
+  .hero h1 {
+    font-size: 1.7rem;
+  }
+
+  .terms h1 {
+    font-size: 1.7rem;
+  }
+
+  .terms p {
+    font-size: 1rem;
+    padding: 0 0.75rem;
+  }
+}

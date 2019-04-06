@@ -1,0 +1,4 @@
+// Slideshow
+$(function() {
+  $(".rslides").responsiveSlides();
+});

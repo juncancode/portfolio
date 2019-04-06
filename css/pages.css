@@ -1,0 +1,200 @@
+/* Variables */
+:root {
+  --main-font: "Montserrat", sans-serif;
+  --secondary-font: "Varela Round", sans-serif;
+  --main-color: rgb(82, 43, 133);
+  --secondary-color: rgba(58, 1, 132, 0.44);
+}
+
+/* Utility Classes */
+.divider {
+  display: block;
+  width: 30%;
+  border-bottom: 3px solid var(--secondary-color);
+}
+
+/* Hero Image */
+#animation {
+  padding-top: 5.7rem;
+  background-image: url(../imgs/animation_header.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom 20%;
+  background-attachment: fixed;
+  width: 100%;
+  min-height: 200px;
+  position: relative;
+}
+
+/* Graphic Design */
+#graphic_design {
+  padding-top: 5.7rem;
+  background-image: url(../imgs/graphicdesign_header.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom 20%;
+  background-attachment: fixed;
+  width: 100%;
+  min-height: 200px;
+  position: relative;
+}
+
+/* Web Development */
+#web_development {
+  padding-top: 5.7rem;
+  background-image: url(../imgs/web_overlay.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom 20%;
+  background-attachment: fixed;
+  width: 100%;
+  min-height: 200px;
+  position: relative;
+}
+
+#animation::after,
+#graphic_design::after,
+#web_development::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+}
+
+#animation h1,
+#graphic_design h1,
+#web_development h1 {
+  font-family: var(--main-font);
+  font-weight: 800;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+}
+
+#animation p,
+#graphic_design p,
+#web_development p {
+  font-family: var(--secondary-font);
+  color: #fff;
+  position: relative;
+  z-index: 1;
+}
+
+/* Why Section */
+.jumbotron h1 {
+  font-family: var(--main-font);
+  font-weight: 800;
+}
+
+/* Work Section */
+#work .header {
+  font-family: var(--main-font);
+  color: var(--main-color);
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+#work .header p {
+  width: 75%;
+  position: relative;
+  text-transform: uppercase;
+}
+
+#work .header p::before {
+  display: block;
+  content: "";
+  width: 100%;
+  position: absolute;
+  background: var(--secondary-color);
+  height: 3px;
+  top: 50%;
+}
+
+#work .header p > span {
+  padding: 0 3rem;
+  display: inline-block;
+  max-width: 85%;
+  position: relative;
+  background-color: #fff;
+}
+
+#work .card-header {
+  position: relative;
+  overflow: hidden;
+}
+
+#work .card img {
+  width: 100%;
+  height: 250px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -webkit-transition: -webkit-transform 0.5s
+    cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: -webkit-transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -o-transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+    -webkit-transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  cursor: pointer;
+}
+
+#work .card img:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+#work .card-header {
+  padding: 0 !important;
+}
+
+.card-header img {
+  padding: 0.75rem 1.25rem;
+}
+
+.card-header:hover + .card-body .card-title {
+  color: var(--main-color);
+}
+
+/* Pagination */
+.pagination {
+  margin: 5rem;
+}
+
+.pagination li a {
+  font-size: 1rem;
+  padding: 1rem;
+  -webkit-transition: background-color 0.5s ease;
+  -o-transition: background-color 0.5s ease;
+  transition: background-color 0.5s ease;
+  color: #333;
+}
+
+.pagination li a:hover {
+  background-color: var(--main-color);
+  color: #fff;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  #work .header {
+    font-size: 2rem;
+  }
+
+  .jumbotron h1 {
+    font-family: var(--main-font);
+    font-weight: 800;
+    font-size: 1.5rem;
+  }
+
+  #work .header p > span {
+    padding: 0 1rem;
+  }
+
+  #work img {
+    height: 50vw;
+  }
+}

@@ -218,11 +218,6 @@ a:hover h5 {
     opacity: 0.85;
   }
 
-  .featured {
-    -ms-grid-columns: 1fr;
-    grid-template-columns: repeat(1, 1fr);
-  }
-
   #about .tools img {
     width: 20%;
     height: 70px;
@@ -243,6 +238,11 @@ a:hover h5 {
   #work_about h2 {
     font-size: 2rem;
   }
+
+  .featured {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 @media (max-width: 500px) {
@@ -258,6 +258,10 @@ a:hover h5 {
 
   .hero h3 {
     display: none;
+  }
+
+  .card {
+    margin: 0 1rem;
   }
 
   #about .btn {

@@ -143,7 +143,7 @@ main img {
 
 /* Hobby */
 #hobby img {
-  max-width: 500px;
+  width: 100%;
 }
 
 /* Photo Slides */
